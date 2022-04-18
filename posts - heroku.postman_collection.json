@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "cff76308-46c8-4eeb-827c-66c59de13742",
+		"name": "posts - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://agile-fortress-38464.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-fortress-38464",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tags\": [\"吃飯\",\"洗澡\"],\r\n    \"image\": \"000\",\r\n    \"name\": \"吃吃Y\",\r\n    \"type\": \"group\",\r\n    \"content\": \"54321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-fortress-38464.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-fortress-38464",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-ALL",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://agile-fortress-38464.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-fortress-38464",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://agile-fortress-38464.herokuapp.com/posts/625c301313a0b574ed67497e",
+					"protocol": "https",
+					"host": [
+						"agile-fortress-38464",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625c301313a0b574ed67497e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tags\": [\"吃飯\",\"洗澡\"],\r\n    \"well\": \"165\",\r\n    \"image\": \"000\",\r\n    \"name\": \"島島\",\r\n    \"type\": \"group\",\r\n    \"content\": \"54321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-fortress-38464.herokuapp.com/posts/625c168e414244ecd7f6a558",
+					"protocol": "https",
+					"host": [
+						"agile-fortress-38464",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625c168e414244ecd7f6a558"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
